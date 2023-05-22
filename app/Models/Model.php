@@ -126,8 +126,8 @@ class Model{
     $values='\''.implode("','",$values).'\'';
 
     $sql = "INSERT INTO {$pivotTable} ({$columns}) VALUES ({$values})";
-    return $sql;
-    // $this->execute($sql);
+    // return $sql;
+    $this->execute($sql);
   }
 
   public function detach($pivotTable, $data)
@@ -140,7 +140,7 @@ class Model{
     $conditions = implode(' AND ', $conditions);
 
     $sql = "DELETE FROM {$pivotTable} WHERE {$conditions}";
-    return $sql;
-    // $this->execute($sql);
+    // return $sql;
+    $this->execute($sql);
   }
 }
