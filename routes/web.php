@@ -27,7 +27,7 @@ use bootstrap\Route;
   Route::put('/api/users/:id',[UserController::class,'update']);
   Route::delete('/api/users/:id',[UserController::class,'delete']);
 
-  // Route::get('/api/cars/:id/user',[CarController::class,'user']);
+  //Route::get('/api/cars/:id/user',[CarController::class,'user']);
 
   //Endpoints Roles
   Route::get('/api/roles/:id/users',[RoleController::class,'users']);
