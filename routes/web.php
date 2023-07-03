@@ -10,11 +10,15 @@ use app\Controllers\EspecialidadController;
 use app\Controllers\PacienteController;
 use app\Controllers\CitaController;
 use app\Controllers\ExpedienteController;
+use app\Controllers\EmailController;
 use bootstrap\Route;
 
   //Endpoints Auth
   Route::post('/api/login',[AuthController::class,'login']);
   Route::get('/api/profile',[AuthController::class,'profile']);
+
+
+  Route::post('/api/email',[EmailController::class,'sendEmail']);
   
   //Endpoints Usuarios
   Route::get('/api/users/:id/cars',[UserController::class,'cars']);

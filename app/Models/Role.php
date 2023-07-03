@@ -7,7 +7,7 @@ class Role extends Model
 
   public function users($id)
   {
-    return $this->belongsToMany('users',$id);
+    return $this->belongsToMany('usuarios',$id);
   }
   public function addPermiso($data)
   {

@@ -111,7 +111,7 @@ class Model{
           INNER JOIN {$tables[0]}_{$tables[1]} on {$table}.id= {$tables[0]}_{$tables[1]}.{$table}_id
           INNER JOIN {$this->table} on {$tables[0]}_{$tables[1]}.{$this->table}_id={$this->table}.id
           WHERE {$this->table}.id={$id}";
-
+    
     return $this->execute($sql)->get();
   }
 
